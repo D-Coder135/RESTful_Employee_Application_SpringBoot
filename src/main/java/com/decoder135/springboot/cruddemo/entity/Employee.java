@@ -23,6 +23,10 @@ public class Employee {
 
     // define constructor
 
+    public Employee() {
+
+    }
+
     // define getter/setter
 
     // define toString
