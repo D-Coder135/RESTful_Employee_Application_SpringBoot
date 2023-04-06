@@ -7,6 +7,11 @@ import java.util.List;
 
 @Repository
 public class EmployeeDAOJpaImpl implements EmployeeDAO{
+
+    // define field for entitymanager
+
+    // set up constructor injection
+
     @Override
     public List<Employee> findAll() {
         return null;
