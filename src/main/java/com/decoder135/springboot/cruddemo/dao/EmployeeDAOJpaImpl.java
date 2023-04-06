@@ -14,6 +14,11 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
 
     // set up constructor injection
 
+
+    public EmployeeDAOJpaImpl(EntityManager entityManager) {
+        this.entityManager = entityManager;
+    }
+
     @Override
     public List<Employee> findAll() {
         return null;
