@@ -9,7 +9,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class EmployeeRestController {
 
     private EmployeeDAO employeeDAO;
+
     // quick and dirty: inject employee dao
+
+    public EmployeeRestController(EmployeeDAO employeeDAO) {
+        this.employeeDAO = employeeDAO;
+    }
+
 
     // expose "/employees" and return a list of employees
 
