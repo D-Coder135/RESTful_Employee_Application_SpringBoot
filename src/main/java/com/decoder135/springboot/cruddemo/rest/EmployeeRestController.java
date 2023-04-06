@@ -17,8 +17,8 @@ public class EmployeeRestController {
 
     // quick and dirty: inject employee dao(use constructor injection)
 
-    public EmployeeRestController(EmployeeDAO employeeDAO) {
-        this.employeeDAO = employeeDAO;
+    public EmployeeRestController(EmployeeService employeeService) {
+        this.employeeService = employeeService;
     }
 
 
