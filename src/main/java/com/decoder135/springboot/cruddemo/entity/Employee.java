@@ -69,8 +69,6 @@ public class Employee {
 
 
     // define toString
-
-
     @Override
     public String toString() {
         return "Employee{" +
