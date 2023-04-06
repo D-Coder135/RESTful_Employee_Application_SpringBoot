@@ -30,7 +30,6 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
         List<Employee> employees = theQuery.getResultList();
 
         // return the results
-
-        return null;
+        return employees;
     }
 }
