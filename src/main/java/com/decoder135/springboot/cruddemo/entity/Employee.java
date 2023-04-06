@@ -8,6 +8,13 @@ import jakarta.persistence.Table;
 public class Employee {
 
     // define fields
+    private int id;
+
+    private String firstName;
+
+    private String lastName;
+
+    private String email;
 
     // define constructor
 
