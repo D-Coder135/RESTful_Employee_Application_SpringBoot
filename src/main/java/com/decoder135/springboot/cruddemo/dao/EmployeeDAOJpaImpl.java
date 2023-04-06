@@ -2,6 +2,7 @@ package com.decoder135.springboot.cruddemo.dao;
 
 import com.decoder135.springboot.cruddemo.entity.Employee;
 import jakarta.persistence.EntityManager;
+import jakarta.persistence.TypedQuery;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
@@ -23,6 +24,7 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
     public List<Employee> findAll() {
 
         // create a  query
+        TypedQuery<Employee> theQuery = entityManager.createQuery("from Employee", Employee.class);
 
         // execute query and get result list
 
