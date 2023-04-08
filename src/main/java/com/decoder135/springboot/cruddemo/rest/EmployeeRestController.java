@@ -48,6 +48,8 @@ public class EmployeeRestController {
 
         Employee dbEmployee = employeeService.save(theEmployee);
 
+        return dbEmployee;
+
     }
 
 }
