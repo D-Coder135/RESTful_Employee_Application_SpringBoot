@@ -53,6 +53,8 @@ public class EmployeeRestController {
     }
 
     // add mapping for PUT /employees - update existing employee
+
+    @PutMapping("/employees")
     public Employee updateEmployee(@RequestBody Employee theEmployee) {
 
     }
