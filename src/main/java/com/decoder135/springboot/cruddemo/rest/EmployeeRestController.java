@@ -38,7 +38,7 @@ public class EmployeeRestController {
     }
 
     // add mapping for POST /employees - add new employee
-
+    @PostMapping("/employee/{employeeId}")
     public Employee addEmployee(@RequestBody Employee theEmployee) {
 
     }
