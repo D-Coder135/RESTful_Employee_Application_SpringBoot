@@ -30,6 +30,7 @@ public class EmployeeServiceImpl implements EmployeeService{
         // "Optional" is a different pattern instead of having to check for null. Feature introduced in Java 8.
 
         Optional<Employee> result = employeeRepository.findById(theId);
+        Employee theEmployee = null;
         return result;
     }
 
