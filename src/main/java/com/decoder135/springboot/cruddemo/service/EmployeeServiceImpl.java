@@ -1,6 +1,5 @@
 package com.decoder135.springboot.cruddemo.service;
 
-import com.decoder135.springboot.cruddemo.dao.EmployeeDAO;
 import com.decoder135.springboot.cruddemo.entity.Employee;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
