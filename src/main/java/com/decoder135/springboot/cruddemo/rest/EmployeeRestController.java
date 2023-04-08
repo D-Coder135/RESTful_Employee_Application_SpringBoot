@@ -63,6 +63,7 @@ public class EmployeeRestController {
 
     // add mapping for DELETE /employee/{employeeId} - delete employee
 
+    @DeleteMapping("/employee/{employeeId}")
     public String deleteEmployee(@PathVariable int employeeId) {
 
     }
