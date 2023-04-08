@@ -50,8 +50,7 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
         Employee dbEmployee = entityManager.merge(theEmployee);
 
         // return the dbEmployee
-
-        return null;
+        return dbEmployee;
     }
 
     @Override
