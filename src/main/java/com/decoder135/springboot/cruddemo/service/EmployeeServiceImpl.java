@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.Optional;
 
 @Service
 public class EmployeeServiceImpl implements EmployeeService{
@@ -25,7 +26,11 @@ public class EmployeeServiceImpl implements EmployeeService{
 
     @Override
     public Employee findById(int theId) {
-        return employeeRepository.findById(theId);
+
+        // "Optional" is a different pattern instead of having to check for null. Feature introduced in Java 8.
+
+        Optional<Employee> result = employeeRepository.findById(theId);
+        return result;
     }
 
     @Override
