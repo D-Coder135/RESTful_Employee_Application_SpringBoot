@@ -56,5 +56,10 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
     @Override
     public void deleteById(int theId) {
 
+        // find employee by id
+
+        // remove employee
+
+
     }
 }
