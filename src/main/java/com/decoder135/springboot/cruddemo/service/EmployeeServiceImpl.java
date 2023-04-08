@@ -31,6 +31,11 @@ public class EmployeeServiceImpl implements EmployeeService{
 
         Optional<Employee> result = employeeRepository.findById(theId);
         Employee theEmployee = null;
+
+        if (result.isPresent()) {
+            theEmployee = result.get();
+        }
+
         return result;
     }
 
