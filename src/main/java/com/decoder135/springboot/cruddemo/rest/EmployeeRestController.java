@@ -28,4 +28,7 @@ public class EmployeeRestController {
         return employeeService.findAll();
     }
 
+    // add mapping for GET /employee/{employeeId}
+
+
 }
