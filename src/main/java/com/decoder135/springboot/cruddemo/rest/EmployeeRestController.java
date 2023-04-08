@@ -3,10 +3,7 @@ package com.decoder135.springboot.cruddemo.rest;
 import com.decoder135.springboot.cruddemo.dao.EmployeeDAO;
 import com.decoder135.springboot.cruddemo.entity.Employee;
 import com.decoder135.springboot.cruddemo.service.EmployeeService;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -41,5 +38,9 @@ public class EmployeeRestController {
     }
 
     // add mapping for POST /employees - add new employee
+
+    public Employee addEmployee(@RequestBody Employee theEmployee) {
+
+    }
 
 }
