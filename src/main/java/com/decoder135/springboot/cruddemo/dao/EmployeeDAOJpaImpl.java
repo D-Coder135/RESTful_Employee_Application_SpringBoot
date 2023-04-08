@@ -60,6 +60,7 @@ public class EmployeeDAOJpaImpl implements EmployeeDAO{
         Employee theEmployee = entityManager.find(Employee.class, theId);
 
         // remove employee
+        entityManager.remove(theEmployee);
 
 
     }
