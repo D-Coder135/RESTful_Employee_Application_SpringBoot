@@ -74,6 +74,8 @@ public class EmployeeRestController {
         }
 
         employeeService.deleteById(employeeId);
+
+        return "Deleted employee id - " + employeeId + ".";
     }
 
 }
