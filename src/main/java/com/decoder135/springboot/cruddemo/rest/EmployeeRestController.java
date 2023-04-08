@@ -38,7 +38,7 @@ public class EmployeeRestController {
     }
 
     // add mapping for POST /employees - add new employee
-    @PostMapping("/employee/{employeeId}")
+    @PostMapping("/employees")
     public Employee addEmployee(@RequestBody Employee theEmployee) {
 
         // also just in case they pass an id in JSON ... set id to 0
