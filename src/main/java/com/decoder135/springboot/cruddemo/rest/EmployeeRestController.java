@@ -4,6 +4,7 @@ import com.decoder135.springboot.cruddemo.dao.EmployeeDAO;
 import com.decoder135.springboot.cruddemo.entity.Employee;
 import com.decoder135.springboot.cruddemo.service.EmployeeService;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,6 +30,8 @@ public class EmployeeRestController {
     }
 
     // add mapping for GET /employee/{employeeId}
+    public Employee getEmployee(@PathVariable int employeeId) {
 
+    }
 
 }
