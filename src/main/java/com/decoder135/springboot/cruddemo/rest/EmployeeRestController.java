@@ -61,4 +61,6 @@ public class EmployeeRestController {
         return dbEmployee;
     }
 
+    // add mapping for DELETE /employee/{employeeId} - delete employee
+
 }
