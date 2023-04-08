@@ -36,7 +36,7 @@ public class EmployeeServiceImpl implements EmployeeService{
             theEmployee = result.get();
         }
 
-        return result;
+        return theEmployee;
     }
 
     @Override
