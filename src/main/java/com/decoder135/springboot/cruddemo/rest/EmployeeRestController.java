@@ -46,6 +46,8 @@ public class EmployeeRestController {
 
         theEmployee.setId(0);
 
+        Employee dbEmployee = employeeService.save(theEmployee);
+
     }
 
 }
